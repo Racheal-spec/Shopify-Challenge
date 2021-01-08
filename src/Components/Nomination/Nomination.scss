@@ -1,0 +1,24 @@
+.nomi-section{
+    .nomi-card{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 50px;
+        .nomi-content{
+            margin-left: 40px;
+            button{
+                background-color: rgb(19, 61, 177);
+                color: white;
+                padding: 10px 5px;
+                font-weight: bold;
+                transition: all 0.4s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: black;
+                    color: grey;
+                }
+            }
+        }
+      }
+     
+}
