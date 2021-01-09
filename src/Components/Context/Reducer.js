@@ -11,7 +11,7 @@ const Reducer = (state, action) => {
             
             return{
                ...state,
-               nominations: [state.nominations, action.list]
+               nominations: [...state.nominations, action.list]
             }
     
         case 'REMOVE_FROM_NOMINATION':

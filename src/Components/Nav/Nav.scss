@@ -4,6 +4,10 @@
     justify-content: space-around;
     height: 10%;
     background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
     .nav-link{
         color: white;
         text-decoration: none;

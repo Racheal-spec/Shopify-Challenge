@@ -8,7 +8,7 @@ const Nomination = () => {
 const[{nominations}] = useStateValue();
 
     return(
-       <div className="nomi-card">
+       <div className="nomi-msg">
            {nominations?.length === 0 ? (
                <h1>Your nomination list is empty</h1>
            ) : (

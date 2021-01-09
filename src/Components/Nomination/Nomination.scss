@@ -4,8 +4,14 @@
         align-items: center;
         justify-content: flex-start;
         padding: 10px 50px;
+        @media screen and(max-width:600px){
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0;
+            margin-left: 50px;
+        }
         .nomi-content{
-            margin-left: 40px;
+            margin: 30px;
             button{
                 background-color: rgb(19, 61, 177);
                 color: white;
@@ -21,4 +27,9 @@
         }
       }
      
+}
+.nomi-msg{
+    h1{
+        padding-top: 50px;
+    }
 }
