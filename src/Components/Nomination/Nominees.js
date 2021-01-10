@@ -14,7 +14,7 @@ const removefromnomination = ()=> {
     return(
    <div className="nominees">
     <section className="nomi-section">
-    <div className="nomi-card" id={id}>
+    <div className="nomi-card" key={id}>
     <img src={Poster} alt="movies" />
    <div className="nomi-content">
    <h1>{title}</h1>

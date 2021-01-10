@@ -28,8 +28,8 @@ const Homepage = () => {
     return(
     <div>
    <section className= "first-section">
-            <h1>Welcome to The Shoppies.<br /> Now you can search your favourite movie and nominate.</h1>
         <div className="firstsection-div">
+        <h1>Welcome to The Shoppies.<br /> Now you can search your favourite movie and nominate.</h1>
         <form className = "search-form" onSubmit={getResults}>
           <input className = "search-input" name="query" type = "text"
            value={searches}
@@ -40,7 +40,8 @@ const Homepage = () => {
         </div>
         </section>
 
-        <section>
+        <section className="result-section">
+        <h2>Your Search results for "{query}" </h2>
             <div className="card-div">
               {results?.length > 0 ? (
                 results && results.filter((result) => result.Poster).map((result) => (

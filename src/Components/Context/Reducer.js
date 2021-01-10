@@ -8,10 +8,11 @@ const Reducer = (state, action) => {
 
     switch (action.type) {
         case 'ADD_TO_NOMINATION':
-            
-            return{
-               ...state,
-               nominations: [...state.nominations, action.list]
+          
+            return{  
+            ...state,
+             nominations: [...state.nominations, action.list]
+                
             }
     
         case 'REMOVE_FROM_NOMINATION':

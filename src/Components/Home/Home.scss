@@ -1,9 +1,15 @@
 .first-section{
     padding: 50px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(./moviePicture.jpg),;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
     h1{
         font-size: 30px;
+        color: white;
     }
     .firstsection-div{
+       padding: 50px 0;
         form{
         .search-input{
             width: 50%;
@@ -33,26 +39,32 @@
     }
 }
 
-.card-div{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    @media screen and (max-width: 600px){
-        grid-template-columns: 1fr;
+.result-section{
+    h2{
+        text-align: start;
+        padding: 0 30px;
     }
-    .error-message{
+    .card-div{
         display: grid;
-        grid-template-columns: 1000px;
-        padding-left: 200px;
-        color: rgba(255, 0, 0, 0.432);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
         @media screen and (max-width: 600px){
-           grid-template-columns: 1fr;
-           padding-left: 0;
+            grid-template-columns: 1fr;
+        }
+        .error-message{
+            display: grid;
+            grid-template-columns: 1000px;
+            padding-left: 200px;
+            color: rgba(255, 0, 0, 0.432);
+            @media screen and (max-width: 600px){
+               grid-template-columns: 1fr;
+               padding-left: 0;
+            }
         }
     }
 }
 .movies-section{
-    padding: 50px 30px;
+    padding: 20px 30px;
     .movies-card{
        background-color: whitesmoke;
         box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.164);

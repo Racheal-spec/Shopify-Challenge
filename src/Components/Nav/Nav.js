@@ -15,7 +15,7 @@ const Nav = () => {
 </Link>
 </div>
     <div className="nomination">
-    <Link to='/Nomination' className="nomi-link">
+ <Link to='/Nomination' className="nomi-link">
         <h3>Nomination List[<span>{nominations?.length}</span>]</h3>
     </Link>
     </div>

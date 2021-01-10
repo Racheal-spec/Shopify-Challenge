@@ -15,9 +15,9 @@ const[{nominations}] = useStateValue();
                <div>
                <h1>Your nomination list</h1>
                {nominations.map((list)=> (
-                   <div className="nomi-list">
+                   <div className="nomi-list" key={list.id}>
                        <Nominees 
-                        key={list.imdbID}
+                        key={list.id}
                         id = {list.id}
                         Poster = {list.Poster}
                         title = {list.title}

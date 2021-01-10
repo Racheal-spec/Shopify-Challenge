@@ -1,0 +1,30 @@
+.banner{
+    .banner-note{
+        background-color: rgb(19, 61, 177);
+        width: 100%;
+        height: 100px;
+        z-index: 9;
+        position: fixed;
+        top: 0;
+      
+        h1{
+            color: white;
+            text-align: center;
+            margin: 20px auto;
+        }
+    }
+    .cancel{
+        display: none;
+    }
+    .cancel-btn{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        z-index: 9;
+        cursor: pointer;
+        h2{
+            color: white;
+           
+           }
+    }  
+}
