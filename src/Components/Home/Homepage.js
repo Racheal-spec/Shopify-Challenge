@@ -43,8 +43,7 @@ const Homepage = () => {
         <section className="result-section">
         <h2>Your Search results for "{query}" </h2>
             <div className="card-div">
-              {results?.length > 0 ? (
-                results && results.filter((result) => result.Poster).map((result) => (
+               {results && results.filter((result) => result.Poster).map((result) => (
                   <Movies 
                   key={result.imdbID}
                   id={result.imdbID}
@@ -52,12 +51,8 @@ const Homepage = () => {
                   Plots = {result.Year}
                   title = {result.Title}
                   />
-              ))) : (
-          <h2 className="error-message">Opps!! Couldn't find movie. Please check that you
-             input the right movie or search another movie to get the appropriate result
-             </h2>
-           
-              )}
+              ))
+              }
               
           </div>   
         </section>
