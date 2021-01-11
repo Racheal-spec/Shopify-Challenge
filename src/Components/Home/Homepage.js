@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Movies from './Movies';
 
 const Homepage = () => {
-    const[query, setQuery] = useState("mulan");
+    const[query, setQuery] = useState("");
     const[searches, setSearches] = useState('');
     const[results, setResults] = useState([]);
 
@@ -14,7 +14,7 @@ const Homepage = () => {
         setQuery(searches);
         }
  
-    useEffect((e) => {
+    useEffect(() => {
       const searchMovies = async () => {
         const api_Key = "d3ceb755";
         const searchUrl = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=${api_Key}`);
@@ -52,8 +52,7 @@ const Homepage = () => {
                   title = {result.Title}
                   />
               ))
-              }
-              
+              } 
           </div>   
         </section>
 </div>
