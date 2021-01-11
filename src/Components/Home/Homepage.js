@@ -17,7 +17,7 @@ const Homepage = () => {
     useEffect(() => {
       const searchMovies = async () => {
         const api_Key = "d3ceb755";
-        const searchUrl = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=${api_Key}`);
+        const searchUrl = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=${api_Key}`);
         const response = await searchUrl.json();
         console.log(response.Search);
         setResults(response.Search);
