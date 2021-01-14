@@ -4,8 +4,9 @@ import './Home.scss';
 
 const Movies = ({id, Plots, title, Poster}) => {
     const[, dispatch] = useStateValue();
+
     let disableBtn = useRef();
-        const addToNomination = ()=> {
+        const addToNomination = (list)=> {
 
         if(disableBtn.current){
             disableBtn.current.setAttribute('disabled', 'disabled');
